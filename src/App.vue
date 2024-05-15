@@ -1,32 +1,16 @@
 <template>
   <div id="app">
-    <nav>
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
-    </nav>
+    <div class="border border-white justify-between hidden w-10/12 h-16 mx-auto my-10 lg:flex">
+      <nav class="self-center w-5/12">
+        <ul class="flex">
+          <li class="mr-8 text-lg text-white cursor-pointer"><router-link to="/">Portfolio</router-link></li>
+          <li class="mr-8 text-lg text-white cursor-pointer"><router-link to="/about">About Me</router-link></li>
+          <li class="mr-8 text-lg text-white cursor-pointer"><router-link to="/contact">Contact Me</router-link></li>
+        </ul>
+      </nav>
+    </div>
     <router-view/>
   </div>
 </template>
 
-<style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-}
 
-nav {
-  padding: 30px;
-}
-
-nav a {
-  font-weight: bold;
-  color: #2c3e50;
-}
-
-nav a.router-link-exact-active {
-  color: #42b983;
-}
-</style>
