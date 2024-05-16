@@ -1,5 +1,6 @@
 <template>
   <div id="app">
+    <MobileNav />
     <div class="justify-between hidden w-10/12 h-16 mx-auto my-10 lg:flex">
 
       <nav class="self-center w-5/12">
@@ -34,5 +35,15 @@
     <router-view/>
   </div>
 </template>
+
+<script>
+import MobileNav from './components/MobileNav.vue';
+
+export default {
+  name: "App",
+  components: { MobileNav }
+
+}
+</script>
 
 
