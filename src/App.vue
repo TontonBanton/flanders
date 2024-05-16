@@ -11,7 +11,7 @@
       </nav>
 
       <router-link to="/">
-        <img src="@/assets/zen.png" class="self-center w-60 h-60">
+        <img src="@/assets/zen.png" class="self-center w-24 h-24">
       </router-link>
 
 
